@@ -1,12 +1,10 @@
 <div align="center">
 
-### Welcome to image-to-pdf 👋
+### Welcome to image-to-pdf-converter 👋
 
-> A simple 🖼️ to 📄 converter for NodeJS
+> A easy to use image to PDF converter with multiple features.
 
 <br>
-
-<img alt="Version" src="https://img.shields.io/github/package-json/v/devicarus/image-to-pdf?style=for-the-badge" />
 
 </div>
 
@@ -14,32 +12,43 @@
 
 ## Instalation
 ```sh
-npm install image-to-pdf
+npm install image-to-pdf-converter
 # OR
-yarn add image-to-pdf
+yarn add image-to-pdf-converter
 ```
 
 ## Example
 ```js
-const imgToPDF = require('image-to-pdf')
+const imgToPDF = require('image-to-pdf-converter')
 const fs = require('fs')
 
 const pages = [
     "./pages/image1.jpeg", // path to the image
+    //OR
     "data:image/png;base64,iVBORw...", // base64
+    //OR
     fs.readFileSync('./pages/image3.png') // Buffer
 ]
- 
-imgToPDF(pages, imgToPDF.sizes.A4)
-    .pipe(fs.createWriteStream('output.pdf'))
+
+const size = imgToPDF.sizes.A4;
+
+imgToPDF(pages, size, {
+    margin: 30, // Single value applied to all sides
+    scale: 'fit', // Scale option set to 'fit'
+    align: 'center', // Center align horizontally
+    valign: 'center', // Center align vertically
+    output: 'output.pdf',
+    borderMargin: 10, // Margin for the border
+    borderWidth: 2, // Width of the border
+    pageNumbering: true, // Enable page numbering
+    pageNumberFormat: '1', // Standard numerals for page numbers
+    pageNumberPositionVertical: 'bottom', // Position at the bottom
+    pageNumberPositionHorizontal: 'right', // Position on the right
+    backgroundColor: '#f0f0f0', // Light gray background color
+    filter: 'greyscale' // Apply sepia filter
+});
+
 ```
 
 ## Documentation
-### Accepted formats
-The only accepted image formats are `png` and `jpeg`. They can be passed to the function as `base64`, `Buffer` or simply as a path to the file (see [Example](#example)).
 
-### Page size
-A list of all size presets in `imgToPDF.sizes` can be found [here](sizes.json). A custom size can be passed to the function simply as `[x, y]`.
-
-### Output
-The function returns a `Stream` (see [official documentation](https://nodejs.org/api/stream.html)). The easiest way to get a file is to `pipe` it into a `WriteStream` (see [Example](#example)).
