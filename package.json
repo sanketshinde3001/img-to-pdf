@@ -1,0 +1,36 @@
+{
+  "name": "img-to-pdf-converter",
+  "version": "1.0.0",
+  "description": "A easy to use image to PDF converter with multiple features.",
+  "author": "sanket <sanketshinde3123@gmail.com> (https://github.com/sanketshinde3001/)",
+  "keywords": [
+    "pdf",
+    "image",
+    "photo",
+    "img",
+    "image-to-pdf",
+    "converter",
+    "image-processing",
+    "pdf-generation",
+    "jpg",
+    "png"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanketshinde3001/img-to-pdf/"
+  },
+  "main": "main.js",
+  "license": "ISC",
+  "dependencies": {
+    "pdfkit": "^0.13.0",
+    "sharp": "^0.33.4"
+  },
+  "bugs": {
+    "url": "https://github.com/sanketshinde3001/img-to-pdf/issues"
+  },
+  "homepage": "https://github.com/sanketshinde3001/img-to-pdf#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
