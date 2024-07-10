@@ -188,6 +188,6 @@ Contributions are welcome! If you'd like to contribute to `photo-to-pdf`, please
 
 ### Contact
 
-If you have any questions or need support, feel free to [contact us](mailto:sanketshinde3123@gmail.com) or [open an issue](https://github.com/sanketshinde3001/img-to-pdf/issues) on GitHub.
+If you have any questions or need support, feel free to [contact us](mailto:sanketshinde3123@gmail.com) or [open an issue](https://github.com/sanketshinde3001/photo-to-pdf) on GitHub.
 
 
