@@ -1,5 +1,5 @@
 {
-  "name": "img-to-pdf-converter",
+  "name": "photo-to-pdf",
   "version": "1.0.0",
   "description": "A easy to use image to PDF converter with multiple features.",
   "author": "sanket <sanketshinde3123@gmail.com> (https://github.com/sanketshinde3001/)",
@@ -22,7 +22,6 @@
   "main": "index.js",
   "license": "ISC",
   "dependencies": {
-    "img-to-pdf-converter": "^1.0.0",
     "pdfkit": "^0.13.0",
     "sharp": "^0.33.4"
   },

@@ -1,6 +1,6 @@
 <div align="center">
 
-### Welcome to image-to-pdf-converter 👋
+### Welcome to photo-to-pdf 👋
 
 > A easy to use image to PDF converter with multiple features.
 
@@ -12,14 +12,14 @@
 
 ## Instalation
 ```sh
-npm install image-to-pdf-converter
+npm install photo-to-pdf
 # OR
-yarn add image-to-pdf-converter
+yarn add photo-to-pdf
 ```
 
 ## Example
 ```js
-const imgToPDF = require('image-to-pdf-converter')
+const imgToPDF = require('photo-to-pdf')
 const fs = require('fs')
 
 const pages = [
